@@ -1,0 +1,14 @@
+
+{
+  "name": "kagenex-ai",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n FRONTEND,BACKEND \"npm --prefix frontend run dev\" \"uv run --directory backend uvicorn main:app --reload --port 8000\"",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "uv run --directory backend uvicorn main:app --reload --port 8000"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}

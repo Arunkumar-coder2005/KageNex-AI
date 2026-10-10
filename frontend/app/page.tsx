@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ApiStatus from "@/components/ApiStatus";
 
 export default function Home() {
   return (
@@ -63,6 +64,7 @@ export default function Home() {
             Documentation
           </a>
         </div>
+        <ApiStatus />
       </main>
     </div>
   );
