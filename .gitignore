@@ -1,0 +1,48 @@
+
+# Node.js dependencies
+node_modules/
+frontend/node_modules/
+
+# Next.js generated files
+frontend/.next/
+frontend/out/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+backend/.venv/
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+!frontend/.env.*.example
+
+backend/.env
+backend/.env.*
+!backend/.env.example
+!backend/.env.*.example
+
+# Build and test outputs
+dist/
+build/
+coverage/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
