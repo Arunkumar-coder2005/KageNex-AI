@@ -29,7 +29,7 @@ def test_me_accepts_valid_token(monkeypatch):
     import jwt
 
     supabase_url = "https://example.supabase.co"
-    secret = "test-only-secret-for-unit-tests"
+    secret = "test-only-secret-for-unit-tests-longer-than-32-bytes-longer-than-32-bytes"
 
     monkeypatch.setenv("SUPABASE_URL", supabase_url)
     monkeypatch.setenv("SUPABASE_JWT_SECRET", secret)
